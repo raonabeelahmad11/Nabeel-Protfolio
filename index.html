@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Protfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+</head>
+<body>
+
+    <!-- 🔹 Background Animation -->
+    <div id="particles-js"></div>
+    <div class="protfolio-container">
+        <ul class="navlist">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="about.html">About</a> </li>
+            <li><a href="work.html">Work</a> </li>
+            <li><a href="#">Project</a> </li>
+            <li><a herf="#">Services</a> </li>
+        </ul>
+
+
+        <div class="left-container">
+            <div class="icons">
+                <a href="https://www.facebook.com/raonabeelahmad11" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/rao.nabeel._?igsh=Nnh1NXV4NzY0Mmk%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="content">
+                <h2> Hi ! I Am <span>  Nabeel Ahmad </span></h2>
+                <h1> Ai Engineer.</h1>
+                <p>
+                    I am a BS Artificial Intelligence student with a strong interest in machine learning and its real-world uses. I enjoy learning new technologies and improving my problem-solving and programming skills. My goal is to grow my knowledge and build a career in the tech field.
+                </p>
+                <div class="button-group">
+                    <button class="btn">Hire Me</button>
+                    <button class="btn">View Project</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="design">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 120,
+                    "density": { "enable": true, "value_area": 1000 }
+                },
+                "color": { "value": "#5DB9EE" },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#5DB9EE",
+                    "opacity": 0.6,
+                    "width": 1
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": true
+                },
+                "size": {
+                    "value": 4,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#5DB9EE",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 200, "line_linked": { "opacity": 0.7 } },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+
+</body>
+</html>
