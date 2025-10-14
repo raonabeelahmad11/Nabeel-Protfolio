@@ -1,0 +1,295 @@
+﻿/* General body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: none;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navlist {
+    position: fixed; /* upar fix */
+    top: 0; /* screen ke bilkul top pe */
+    left: 0;
+    width: 100%; /* full width */
+    height: 10vh; /* height (agar zaroorat ho) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    font-family: "Inter", sans-serif;
+    background: #000000; /* background dena zaroori hai warna text scroll me mix ho jayega */
+    z-index: 1000; /* content ke upar rahe */
+    margin: 0; /* margin hata diya */
+}
+
+    .navlist li {
+        list-style: none;
+    }
+
+        .navlist li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+/* Neon background spheres */
+.neon-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+    .neon-bg span {
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: rgba(0,255,255,0.8);
+        border-radius: 50%;
+        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+        animation: floatNeon 12s linear infinite;
+    }
+
+        /* Random positions and delays */
+        .neon-bg span:nth-child(1) {
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .neon-bg span:nth-child(2) {
+            top: 30%;
+            left: 50%;
+            animation-delay: 2s;
+        }
+
+        .neon-bg span:nth-child(3) {
+            top: 60%;
+            left: 70%;
+            animation-delay: 4s;
+        }
+
+        .neon-bg span:nth-child(4) {
+            top: 80%;
+            left: 10%;
+            animation-delay: 6s;
+        }
+
+        .neon-bg span:nth-child(5) {
+            top: 50%;
+            left: 30%;
+            animation-delay: 1s;
+        }
+
+        .neon-bg span:nth-child(6) {
+            top: 20%;
+            left: 80%;
+            animation-delay: 3s;
+        }
+
+        .neon-bg span:nth-child(7) {
+            top: 40%;
+            left: 60%;
+            animation-delay: 5s;
+        }
+
+        .neon-bg span:nth-child(8) {
+            top: 70%;
+            left: 40%;
+            animation-delay: 7s;
+        }
+
+        .neon-bg span:nth-child(9) {
+            top: 25%;
+            left: 75%;
+            animation-delay: 8s;
+        }
+
+        .neon-bg span:nth-child(10) {
+            top: 55%;
+            left: 15%;
+            animation-delay: 9s;
+        }
+
+@keyframes floatNeon {
+    0% {
+        transform: translate(0,0) scale(0.5);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translate(50px,-120px) scale(1.2);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translate(-50px,120px) scale(0.5);
+        opacity: 0.3;
+    }
+}
+
+/* About section */
+.about {
+    margin-top: 50px;
+    text-align: center;
+    padding: 2rem;
+}
+
+    .about h1 {
+        font-size: 48px;
+    }
+
+        .about h1 span {
+            color: #fff;
+        }
+
+    .about p {
+        font-family: poppin;
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+.work-section {
+    text-align: center;
+    padding: 120px 20px 60px; /* extra padding for fixed navbar */
+    position: relative;
+    z-index: 10;
+}
+
+    .work-section h2 {
+        font-size: 2.8rem;
+        color: #fff;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    .work-section .subtitle {
+        color: #aaa;
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+
+    .work-section h1 {
+        text-align: left;
+        padding-left: 10%;
+        font-size: 1.8rem;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+/* ==== Work Cards Grid ==== */
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ==== Individual Work Card ==== */
+.work-card {
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(93, 185, 238, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(93, 185, 238, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+    .work-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 25px rgba(93, 185, 238, 0.4);
+        border-color: rgba(93, 185, 238, 0.5);
+    }
+
+    /* ==== Image in Card ==== */
+    .work-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .work-card:hover img {
+        transform: scale(1.05);
+    }
+
+/* ==== Text Info ==== */
+.work-info {
+    padding: 20px;
+    text-align: left;
+}
+
+    .work-info h3 {
+        color: #5DB9EE;
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .work-info p {
+        font-size: 0.95rem;
+        color: #ccc;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    /* ==== Button ==== */
+    .work-info a {
+        display: inline-block;
+        background: #5DB9EE;
+        color: #000;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+        .work-info a:hover {
+            background: #fff;
+            color: #000;
+            box-shadow: 0 0 15px #5DB9EE;
+        }
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+    .navlist {
+        gap: 1.5rem;
+        height: 10vh;
+    }
+
+    .work-section h2 {
+        font-size: 2rem;
+    }
+
+    .work-section h1 {
+        padding-left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .work-info h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Particle Background */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000; /* tumhara dark red-black theme */
+    top: 0;
+    left: 0;
+    z-index: -1; /* taa k content upar aaye */
+}
