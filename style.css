@@ -173,7 +173,7 @@ button:nth-child(2):hover {
 }
 
 .circle:nth-child(2) {
-    background-image: url("images/6.jpg");
+    background-image: url("https://raonabeelahmad11.github.io/Nabeel-Protfolio/6.jpg");
     background-size: 100%;
     width: 400px; /* thoda chhota rakho */
     height: 400px;
@@ -195,6 +195,7 @@ button:nth-child(2):hover {
         display: block;
         background: transparent !important;
     }
+
 
 
 
