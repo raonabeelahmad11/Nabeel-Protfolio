@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services | Portfolio</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+    <!-- 🔹 Neon Particle Background -->
+    <div id="particles-js"></div>
+
+    <header class="header">
+        <h1>My <span>Services</span></h1>
+        <p>Creative solutions for modern brands & businesses</p>
+    </header>
+
+    <section class="services-container">
+        <div class="service-card">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>Graphic Design</h2>
+            <p>Professional posters, social media designs, and brand visuals that reflect creativity and purpose.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>UI/UX Design</h2>
+            <p>Clean, user-centered designs that deliver seamless and enjoyable digital experiences.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-End Development</h2>
+            <p>Responsive and dynamic websites using HTML, CSS, and JavaScript with modern UI aesthetics.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h2>Pitch Deck & PPT Design</h2>
+            <p>Impactful presentations designed to engage, inform, and impress your audience or clients.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-brain"></i>
+            <h2>AI & ML Projects</h2>
+            <p>Custom AI-powered solutions and automation tools to enhance productivity and insights.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Nabeel Ahmad | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 120,
+                    "density": { "enable": true, "value_area": 1000 }
+                },
+                "color": { "value": "#5DB9EE" },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#5DB9EE",
+                    "opacity": 0.5,
+                    "width": 1
+                },
+                "opacity": { "value": 0.7, "random": true },
+                "size": { "value": 4, "random": true },
+                "move": { "enable": true, "speed": 3 }
+            },
+            "interactivity": {
+                "events": { "onhover": { "enable": true, "mode": "grab" } },
+                "modes": { "grab": { "distance": 200, "line_linked": { "opacity": 0.7 } } }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+</body>
+</html>
