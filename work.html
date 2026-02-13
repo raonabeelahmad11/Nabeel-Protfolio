@@ -2,119 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Work</title>
+    <meta name="viewport" content="width=1200, initial-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    <title>My Work | Portfolio</title>
     <link rel="stylesheet" href="work.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
+
+    <!-- Particle Background -->
     <div id="particles-js"></div>
 
-
+    <!-- Navigation -->
     <div class="protfolio-container">
         <ul class="navlist">
-            <li><a href="index.html">Home</a> </li>
-            <li><a href="about.html">About</a> </li>
-            <li><a href="work.html">Work</a> </li>
-       
-            <li><a herf="service.html">Services</a> </li>
-
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="service.html">Services</a></li>
         </ul>
     </div>
-    <section class="work-section">
-        <h2>My Work</h2>
-        <p class="subtitle">Some of my recent projects and designs</p>
-        <h1>UI|UX DESIGN </h1>
 
-        <div class="work-container">
+    <!-- Header -->
+    <header class="header">
+        <h1>My <span>Work</span></h1>
+        <p>A showcase of my recent projects and achievements</p>
+    </header>
 
-            <div class="work-card">
-                <img src="images/d2.png" alt="Project 1">
-                <div class="work-info">
-                    <h3>Web Development Project</h3>
-                    <p>A responsive website built with HTML, CSS, and JavaScript.</p>
-                    <a href="#">View Project</a>
+    <!-- Projects Container -->
+    <section class="projects-container">
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="project-info">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-stack web application with payment integration, user authentication, and admin dashboard.</p>
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
                 </div>
             </div>
+        </div>
 
-            <div class="work-card">
-                <img src="https://github.com/raonabeelahmad11/Nabeel-Protfolio/blob/main/d1.png">
-                <div class="work-info">
-                    <h3>Mobile App Design</h3>
-                    <p>UI/UX design for a modern mobile application.</p>
-                    <a href="files/design1.pdf" target="_blank">View Project</a>
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="project-info">
+                <h3>AI Chatbot Assistant</h3>
+                <p>Intelligent conversational AI using natural language processing and machine learning algorithms.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>NLP</span>
                 </div>
             </div>
+        </div>
 
-            <div class="work-card">
-                <img src="project3.jpg" alt="Project 3">
-                <div class="work-info">
-                    <h3>Brand Identity</h3>
-                    <p>Logo design and brand guidelines for a startup.</p>
-                    <a href="#">View Project</a>
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="project-info">
+                <h3>Mobile Fitness App</h3>
+                <p>Cross-platform fitness tracking application with workout plans and progress analytics.</p>
+                <div class="project-tags">
+                    <span>Flutter</span>
+                    <span>Firebase</span>
+                    <span>UI/UX</span>
                 </div>
             </div>
+        </div>
 
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="project-info">
+                <h3>Data Visualization Dashboard</h3>
+                <p>Interactive analytics dashboard for real-time data monitoring and business insights.</p>
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>D3.js</span>
+                    <span>Python</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="project-info">
+                <h3>Brand Identity Design</h3>
+                <p>Complete brand identity package including logo, color palette, and design guidelines.</p>
+                <div class="project-tags">
+                    <span>Figma</span>
+                    <span>Illustrator</span>
+                    <span>Branding</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="project-info">
+                <h3>ML Image Recognition</h3>
+                <p>Computer vision system for object detection and classification using deep learning.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>OpenCV</span>
+                    <span>PyTorch</span>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Nabeel Ahmad | All Rights Reserved</p>
+    </footer>
+
     <script>
-      particlesJS("particles-js", {
-          "particles": {
-              "number": {
-                  "value": 120,
-                  "density": { "enable": true, "value_area": 1000 }
-              },
-              "color": { "value": "#5DB9EE" },
-              "line_linked": {
-                  "enable": true,
-                  "distance": 150,
-                  "color": "#5DB9EE",
-                  "opacity": 0.6,
-                  "width": 1
-              },
-              "opacity": {
-                  "value": 0.7,
-                  "random": true
-              },
-              "size": {
-                  "value": 4,
-                  "random": true
-              },
-              "line_linked": {
-                  "enable": true,
-                  "distance": 150,
-                  "color": "#5DB9EE",
-                  "opacity": 0.4,
-                  "width": 1
-              },
-              "move": {
-                  "enable": true,
-                  "speed": 3,
-                  "direction": "none",
-                  "random": false,
-                  "straight": false,
-                  "out_mode": "out",
-                  "bounce": false
-              }
-          },
-          "interactivity": {
-              "detect_on": "canvas",
-              "events": {
-                  "onhover": { "enable": true, "mode": "grab" },
-                  "onclick": { "enable": true, "mode": "push" },
-                  "resize": true
-              },
-              "modes": {
-                  "grab": { "distance": 200, "line_linked": { "opacity": 0.7 } },
-                  "push": { "particles_nb": 4 }
-              }
-          },
-          "retina_detect": true
-      });
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": { "enable": true, "value_area": 1000 }
+                },
+                "color": { "value": "#d4af37" },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#d4af37",
+                    "opacity": 0.2,
+                    "width": 1
+                },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
+                "move": { "enable": true, "speed": 2 }
+            },
+            "interactivity": {
+                "events": { "onhover": { "enable": true, "mode": "grab" } },
+                "modes": { "grab": { "distance": 200, "line_linked": { "opacity": 0.4 } } }
+            },
+            "retina_detect": true
+        });
     </script>
+
 </body>
 </html>
-
-
